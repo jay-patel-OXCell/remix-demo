@@ -29,7 +29,7 @@ export default function EditContact() {
   return (
     <Form key={contact.id} id="contact-form" method="post">
       <p>
-        <span>Name</span>
+        <span>Name:</span>
         <input
           aria-label="First name"
           defaultValue={contact.first}
@@ -46,7 +46,7 @@ export default function EditContact() {
         />
       </p>
       <label>
-        <span>Twitter</span>
+        <span>Twitter:</span>
         <input
           defaultValue={contact.twitter}
           name="twitter"
@@ -55,7 +55,7 @@ export default function EditContact() {
         />
       </label>
       <label>
-        <span>Avatar URL</span>
+        <span>Avatar URL:</span>
         <input
           aria-label="Avatar URL"
           defaultValue={contact.avatar}
@@ -65,7 +65,7 @@ export default function EditContact() {
         />
       </label>
       <label>
-        <span>Notes</span>
+        <span>Notes:</span>
         <textarea defaultValue={contact.notes} name="notes" rows={6} />
       </label>
       <p>
